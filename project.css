@@ -93,13 +93,14 @@ body {
 
 @media (max-width: 768px) {
   .card {
-    min-height: 700px;
+    min-height: 350px;
   }
 }
 
 @media (max-width: 420px) {
   .card {
-    min-height: 500px;
+    min-height: 300px;
+    min-width: 40px;
   }
 }
 
