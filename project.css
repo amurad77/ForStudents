@@ -99,7 +99,7 @@ body {
 
 @media (max-width: 420px) {
   .card {
-    min-height: 300px;
+    min-height: 500px;
   }
 }
 
