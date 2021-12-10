@@ -164,6 +164,13 @@ footer {
     }
   }
 
+  @media (max-width: 640px) {
+      .container-box{
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+  }
+
 
   
   .quote-card.yellow-card {
