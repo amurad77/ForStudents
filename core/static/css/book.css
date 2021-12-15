@@ -94,17 +94,7 @@ section .section-title {
     -ms-transform: rotateY(0deg);
     z-index: 2;
     margin-bottom: 30px;
-    
 }
-
-@media screen and (min-width: 350px) {
-
-#team .card{
-    margin-left: 27px;
-}
-
-}
-
 
 .backside {
     position: absolute;
@@ -142,7 +132,6 @@ section .section-title {
 .frontside .card,
 .backside .card {
     min-height: 312px;
-    max-width: 312px;
 }
 
 .backside .card a {
