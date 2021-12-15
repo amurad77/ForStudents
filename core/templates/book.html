@@ -30,7 +30,7 @@
          <div class="row">
              <!-- Team member -->
              
-             {% for book in book %}
+             {% for i in book %}
             <div class="col-xs-12 col-sm-6 col-md-4 book">
                 <div class="image-flip">
                     <div class="mainflip flip-0" style="width: 50px;">
@@ -38,10 +38,10 @@
                             <div class="card">
                                 <div class="card-body text-center">
                                     <p><img class=" img-fluid"
-                                            src="{{ book.image.url }}"
+                                            src="{{ i.image.url }}"
                                             alt="card image"></p>
-                                    <h4 class="card-title">{{book.name}}</h4>
-                                    <p class="card-text">{{ book.front_description }}</p>
+                                    <h4 class="card-title">{{i.name}}</h4>
+                                    <p class="card-text">{{ i.front_description }}</p>
                                     <a href="" class="btn btn-primary btn-sm"><i
                                             class="fa fa-plus"></i></a>
                                 </div>
@@ -50,8 +50,8 @@
                         <div class="backside">
                             <div class="card">
                                 <div class="card-body text-center mt-4">
-                                    <h4 class="card-title">{{book.name}}</h4>
-                                    <p class="card-text">{{ book.back_description }}
+                                    <h4 class="card-title">{{i.name}}</h4>
+                                    <p class="card-text">{{ i.back_description }}
                                     </p>
                                     <ul class="list-inline">
                                        
@@ -60,7 +60,7 @@
                                         <li class="list-inline-item">
                                             <a class="social-icon text-xs-center" target="_blank"
                                                 >
-                                                <i class="fas fa-phone mr-2"></i> {{ book.number }}
+                                                <i class="fas fa-phone mr-2"></i> {{ i.number }}
                                             </a>
                                         </li>
                                     </ul>
