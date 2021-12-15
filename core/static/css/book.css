@@ -99,9 +99,9 @@ section .section-title {
 
 @media screen and (min-width: 576px) {
 
-    .frontside{
-        margin-left: 50px;
-    }
+#team .card{
+    margin-left: 50px;
+}
 
 }
 
