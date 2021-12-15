@@ -8,10 +8,10 @@ class University(models.Model):
     date = models.CharField('Tarix', max_length=60)
     description = models.CharField('Melumat', max_length=1200)
     image = models.ImageField(upload_to='media/images')
-    university_link = models.CharField('Link', max_length=100)
-    facebook_link = models.CharField('Link', max_length=100)
-    twitter_link = models.CharField('Link', max_length=100)
-    instagram_link = models.CharField('Link', max_length=100)
+    university_link = models.CharField('Universitet Link', max_length=100)
+    facebook_link = models.CharField('Facebok Link', max_length=100)
+    twitter_link = models.CharField('Twitter Link', max_length=100)
+    instagram_link = models.CharField('Instagram Link', max_length=100)
 
 
 
