@@ -26,7 +26,7 @@ def home(request):
 
 
 def about(request):
-    word = Meqsed.objects.all()
+    word = Meqsed.objects.all().order_by('-id')
     context = {
         'word' : word
     }
