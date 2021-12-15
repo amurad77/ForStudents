@@ -94,7 +94,17 @@ section .section-title {
     -ms-transform: rotateY(0deg);
     z-index: 2;
     margin-bottom: 30px;
+    
 }
+
+@media screen and (min-width: 576px) {
+
+    .frontside{
+        margin-left: 10px;
+    }
+
+}
+
 
 .backside {
     position: absolute;
