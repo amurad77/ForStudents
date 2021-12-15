@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+
+{% load static %}
+   
+   
+   
+   {% block css %}
+
+    <link rel="stylesheet" href="{% static 'css/project.css' %}"   media="screen">
+
+    {% endblock %}
+
+    
+
+    {% block title %}
+
+    Lahiyeler
+
+    {% endblock %}
+
+
+
+      
+ {% block content %}
+
+    
+ <section class="wrapper">
+    <div class="container">
+      <h5 class="section-title h1">Lahiyələr</h5>
+    <div class="row">
+{% for i in project %}
+   <div class="col-md-4 box"><div class="card text-white card-has-bg click-col" style="background-image:url('{{ i.image.url }}');">
+           <img class="card-img d-none" src="{{ i.image.url }}" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+          <div class="card-img-overlay d-flex flex-column">
+           <div class="card-body">
+              <small class="card-meta mb-2">{{i.name}}</small>
+              <h4 class="card-title mt-0 "><a class="text-white" herf="#">{{i.description}}</a></h4>
+             <small><i class="far fa-clock"></i>{{i.date}}</small>
+            </div>
+            <div class="card-footer">
+             <div class="media">
+    <img class="mr-3 rounded-circle" src="https://cdn0.iconfinder.com/data/icons/user-pictures/100/male-512.png" alt="Generic placeholder image" style="max-width:50px">
+    <div class="media-body">
+      <h6 class="my-0 text-white d-block">{{i.manager}}</h6>
+       <small>{{i.manager_job}}</small>
+    </div>
+  </div>
+            </div>
+          </div>
+        </div></div>
+{% endfor %}
+       <!-- <div class="col-md-4 box"><div class="card text-white card-has-bg click-col" style="background-image:url('https://source.unsplash.com/600x900/?tree,nature');">
+           <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tree,nature" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+          <div class="card-img-overlay d-flex flex-column">
+           <div class="card-body">
+              <small class="card-meta mb-2">“Zəfər Yolu”</small>
+              <h4 class="card-title mt-0 "><a class="text-white" herf="#">Mənəvi Dəyərlərin Təbliği Fondu I Sumqayıt Kitab Sərgisində iştirak edəcək</a></h4>
+             <small><i class="far fa-clock"></i> October 15, 2020</small>
+            </div>
+            <div class="card-footer">
+             <div class="media">
+    <img class="mr-3 rounded-circle" src="https://cdn0.iconfinder.com/data/icons/user-pictures/100/male-512.png" alt="Generic placeholder image" style="max-width:50px">
+    <div class="media-body">
+      <h6 class="my-0 text-white d-block">Sanan Abdullayev</h6>
+       <small>Content Manager</small>
+    </div>
+  </div>
+            </div>
+          </div>
+        </div></div>
+
+    <div class="col-md-4 box"><div class="card text-white card-has-bg click-col" style="background-image:url('https://source.unsplash.com/600x900/?computer,design');">
+           <img class="card-img d-none" src="https://source.unsplash.com/600x900/?computer,design" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+          <div class="card-img-overlay d-flex flex-column">
+           <div class="card-body">
+              <small class="card-meta mb-2">“Tarixin şahidləri”</small>
+              <h4 class="card-title mt-0 "><a class="text-white" herf="#">Mənəvi Dəyərlərin Təbliği Fondu din xadimləri və dini icma sədrləri arasında müsabiqə elan edir</a></h4>
+             <small><i class="far fa-clock"></i> October 15, 2020</small>
+            </div>
+            <div class="card-footer">
+             <div class="media">
+    <img class="mr-3 rounded-circle" src="https://cdn0.iconfinder.com/data/icons/user-pictures/100/male-512.png" alt="Generic placeholder image" style="max-width:50px">
+    <div class="media-body">
+      <h6 class="my-0 text-white d-block">Jamil Huseynzada</h6>
+       <small>Project   Manager</small>
+    </div>
+  </div>
+            </div>
+          </div>
+        </div></div>
+     -->
+    
+
+        
+  </div>
+    
+  
+  </div>
+  </section>
+
+{% endblock %}
+
+
+
+
+
+    {% block js %}
+    <script src="{% static 'js/project.js' %}"></script>
+    {% endblock %}

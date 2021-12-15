@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+
+{% load static %}
+   
+   
+   
+   {% block css %}
+
+    <link rel="stylesheet" href="{% static 'css/about.css' %}"   media="screen">
+
+    {% endblock %}
+
+    
+
+    {% block title %}
+
+    Haqqimizda
+
+    {% endblock %}
+
+
+
+      
+ {% block content %}
+
+ <h1 class="about">Haqqımızda</h1>
+
+
+ <div class="container">
+     <div class="row">
+         <div class="container-box">
+
+         
+
+         
+           <blockquote class="quote-card yellow-card">
+             <p>
+               "For Students" saytı Azərbaycan Respublikasının universitetlərində təhsil alan, eləcə də təhsil almaq istəyən şəxslər üçün Azərbaycan Respublikasının Prezidenti yanında Gənclər Fondunun maliyyə dəstəyi əsasında yaradılmışdır. Gənclər Fondu 29 dekabr  2012-ci ildə Azərbaycan Respublikasının Prezidentinin 801 nömrəli Fərmanı ilə təsis olunmuşdur. 
+             </p>
+               <br>
+
+
+               <p>
+               Bizim məqsədimiz:
+             </p>
+               <br>
+
+               <ul>
+                 <li>Tələbələrin vəya tələbə olmaq istəyənləri Azərbaycan Universitetləri ilə yaxından tanış etmək və təhsil almaq istədikləri universitet və ixtisaslarla bağlı ətraflı informasiya bazası ilə təmin etməkdir.</li>
+
+                 <li>Bundan əlavə, bu saytda sizə faydalı olacaq layihələr, könüllük proqramları, universitetlərdə keçirilən tədbirlər, startuplar haqqında məlumatlar yer alacaq.</li>
+
+                 <li>Kitab bölməsində isə siz satmaq istədiyiniz kitabları yerləşdirə vəya yeni kitab əldə edə bilərsiniz. Eləcə də, sizdə olan pdf kitabları bizə göndərərək digər tələbələrə də fayda vermis olarsız.</li>
+
+                 <li>Təklif və suallarınızı əlaqə bölməsindən bizə bildirə bilərsiniz.</li>
+               </ul>
+               
+         
+            <cite>
+             ForStudents
+           </cite>
+
+           
+         </blockquote>
+         
+         </div>
+     </div>
+ </div>
+
+ 
+
+
+{% endblock %}
+
+
+
+
+
+    {% block js %}
+    <script src="about.js"></script>
+    {% endblock %}
