@@ -44,7 +44,7 @@ class Project(models.Model):
     date = models.CharField('Tarix', max_length=60)
     description = models.CharField('Melumat', max_length=100)
     name = models.CharField('Ad', max_length=60)
-    menager = models.CharField('Menecer', max_length=60)
+    manager = models.CharField('Menecer', max_length=60)
     manager_job = models.CharField('Menecerin isi', max_length=60)
     link = models.CharField('Link', max_length=100)
 
