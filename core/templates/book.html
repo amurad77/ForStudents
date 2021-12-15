@@ -24,13 +24,13 @@
       
  {% block content %}
 
- {% for book in book %}
  <section id="team" class="pb-5">
-    <div class="container">
-        <h5 class="section-title h1">Kitablar</h5>
-        <div class="row">
-            <!-- Team member -->
-
+     <div class="container">
+         <h5 class="section-title h1">Kitablar</h5>
+         <div class="row">
+             <!-- Team member -->
+             
+             {% for book in book %}
             <div class="col-xs-12 col-sm-6 col-md-4 book">
                 <div class="image-flip">
                     <div class="mainflip flip-0" style="width: 50px;">
@@ -70,6 +70,7 @@
                     </div>
                 </div>
             </div>
+            {% endblock %}
             
             
         </div>
@@ -78,7 +79,6 @@
 {% endfor %}
 
 
-{% endblock %}
 
 
 
