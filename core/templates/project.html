@@ -29,8 +29,9 @@
     <div class="container">
       <h5 class="section-title h1">Lahiyələr</h5>
     <div class="row">
-{% for i in project %}
-   <div class="col-md-4 box"><div class="card text-white card-has-bg click-col" style="background-image:url('{{ i.image.url }}');">
+      <div class="col-md-4 box">
+     {% for i in project %}
+     <div class="card text-white card-has-bg click-col" style="background-image:url('{{ i.image.url }}');">
            <img class="card-img d-none" src="{{ i.image.url }}" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
           <div class="card-img-overlay d-flex flex-column">
            <div class="card-body">
@@ -46,10 +47,11 @@
        <small>{{i.manager_job}}</small>
     </div>
   </div>
-            </div>
-          </div>
-        </div></div>
+</div>
+</div>
+</div>
 {% endfor %}
+</div>
        <!-- <div class="col-md-4 box"><div class="card text-white card-has-bg click-col" style="background-image:url('https://source.unsplash.com/600x900/?tree,nature');">
            <img class="card-img d-none" src="https://source.unsplash.com/600x900/?tree,nature" alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
           <div class="card-img-overlay d-flex flex-column">
