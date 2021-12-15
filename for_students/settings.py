@@ -75,6 +75,8 @@ WSGI_APPLICATION = 'for_students.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+import time
+time.sleep(2)
 DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql',
@@ -89,7 +91,6 @@ DATABASES = {
     #     'NAME': BASE_DIR / 'db.sqlite3',
     # }
     }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
