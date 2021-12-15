@@ -194,3 +194,12 @@ footer {
     
     
     }
+
+@media (max-width: 576px) {
+
+    .card-text{
+        max-width: 50px !important;
+    }
+    
+    
+    }
