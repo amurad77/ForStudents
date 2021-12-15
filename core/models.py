@@ -3,18 +3,7 @@ from django.db.models.fields import CharField
 
 # Create your models here.
 
-class University_left(models.Model):
-    name = models.CharField('Ad', max_length=60)
-    date = models.CharField('Tarix', max_length=60)
-    description = models.CharField('Melumat', max_length=1200)
-    image = models.ImageField(upload_to='media/images')
-
-    # def __str__(self):
-    #     return self.name
-
-
-
-class University_right(models.Model):
+class University(models.Model):
     name = models.CharField('Ad', max_length=60)
     date = models.CharField('Tarix', max_length=60)
     description = models.CharField('Melumat', max_length=1200)
@@ -22,6 +11,17 @@ class University_right(models.Model):
 
     def __str__(self):
         return self.name
+
+
+
+# class University_right(models.Model):
+#     name = models.CharField('Ad', max_length=60)
+#     date = models.CharField('Tarix', max_length=60)
+#     description = models.CharField('Melumat', max_length=1200)
+#     image = models.ImageField(upload_to='media/images')
+
+#     def __str__(self):
+#         return self.name
 
 
 

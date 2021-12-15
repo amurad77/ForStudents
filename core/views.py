@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from core.models import University_left, University_right, Book, Project, Contact
+from core.models import University, Book, Project, Contact
 from core.forms import ContactForm
 from django.contrib import messages
 
@@ -7,11 +7,11 @@ from django.contrib import messages
 
 
 def home(request):
-    university_left = University_left.objects.all().order_by('-id')
-    university_right = University_right.objects.all()
+    university_left = University.objects.all().order_by('-id')
+
     context = {
         'university_left' : university_left,
-        'university_right' : university_right
+        # 'university_right' : university_right
     }
     # print(context)
     return render(request, 'index.html', context)
