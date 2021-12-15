@@ -14,7 +14,8 @@ class University(models.Model):
     def __str__(self):
         return self.name
 
-
+class Meqsed(models.Model):
+    word = models.CharField('Ad', max_length=500)
 
 # class University_right(models.Model):
 #     name = models.CharField('Ad', max_length=60)

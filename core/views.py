@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from core.models import University, Book, Project, Contact
+from core.models import University, Book, Project, Contact, Meqsed
 from core.forms import ContactForm
 from django.contrib import messages
 
@@ -26,6 +26,10 @@ def home(request):
 
 
 def about(request):
+    word = Meqsed.objects.all()
+    context = {
+        'word' : word
+    }
     return render(request, 'about.html')
 
 def book(request):
