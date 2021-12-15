@@ -30,7 +30,7 @@ def about(request):
     context = {
         'word' : word
     }
-    return render(request, 'about.html')
+    return render(request, 'about.html', context)
 
 def book(request):
     book = Book.objects.all().order_by('-id')
