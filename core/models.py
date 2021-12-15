@@ -8,6 +8,8 @@ class University(models.Model):
     date = models.CharField('Tarix', max_length=60)
     description = models.CharField('Melumat', max_length=1200)
     image = models.ImageField(upload_to='media/images')
+    link = models.CharField('Link', max_length=100)
+
 
     def __str__(self):
         return self.name
@@ -44,6 +46,8 @@ class Project(models.Model):
     name = models.CharField('Ad', max_length=60)
     menager = models.CharField('Menecer', max_length=60)
     menager_job = models.CharField('Menecerin isi', max_length=60)
+    link = models.CharField('Link', max_length=100)
+
 
 
 
