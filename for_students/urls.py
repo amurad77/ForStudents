@@ -26,7 +26,7 @@ from core.views import (
 )
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('security/admin/', admin.site.urls),
     path('', home),
     path('about/', about),
     path('book/', book),
