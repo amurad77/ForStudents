@@ -33,7 +33,7 @@ def about(request):
     return render(request, 'about.html', context)
 
 def book(request):
-    pdf = Pdf.objects.all()
+    pdf = Pdf.objects.all().order_by('-id')
     book = Book.objects.all().order_by('-id')
     context = {
         'pdf' : pdf,
