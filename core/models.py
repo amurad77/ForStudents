@@ -6,7 +6,7 @@ from django.db.models.fields import CharField
 class University(models.Model):
     name = models.CharField('Ad', max_length=60)
     date = models.CharField('Tarix', max_length=60)
-    description = models.CharField('Melumat', max_length=1200)
+    description = models.CharField('Melumat', max_length=5000)
     image = models.ImageField(upload_to='media/images')
     university_link = models.CharField('Universitet Link', max_length=100)
     facebook_link = models.CharField('Facebok Link', max_length=100)
@@ -14,30 +14,19 @@ class University(models.Model):
     instagram_link = models.CharField('Instagram Link', max_length=100)
 
 
-
-
     def __str__(self):
         return self.name
 
 class Meqsed(models.Model):
-    word = models.CharField('Ad', max_length=500)
-
-# class University_right(models.Model):
-#     name = models.CharField('Ad', max_length=60)
-#     date = models.CharField('Tarix', max_length=60)
-#     description = models.CharField('Melumat', max_length=1200)
-#     image = models.ImageField(upload_to='media/images')
-
-#     def __str__(self):
-#         return self.name
+    word = models.CharField('Ad', max_length= 1000)
 
 
 
 class Book(models.Model):
     image = models.ImageField(upload_to='media/images')
     name = models.CharField('Ad', max_length=60)
-    front_description = models.CharField('On melumat', max_length=100)
-    back_description = models.CharField('Arxa melumat', max_length=500)
+    front_description = models.CharField('On melumat', max_length=500)
+    back_description = models.CharField('Arxa melumat', max_length=2000)
     number = models.CharField('Telefon nomresi', max_length=20)
 
     def __str__(self):
@@ -47,9 +36,9 @@ class Book(models.Model):
 
 class Project(models.Model):
     image = models.ImageField(upload_to='media/images')
-    date = models.CharField('Tarix', max_length=60)
-    description = models.CharField('Melumat', max_length=100)
-    name = models.CharField('Ad', max_length=60)
+    date = models.CharField('Tarix', max_length=200)
+    description = models.CharField('Melumat', max_length=500)
+    name = models.CharField('Ad', max_length=100)
     manager = models.CharField('Menecer', max_length=60)
     manager_job = models.CharField('Menecerin isi', max_length=60)
     link = models.CharField('Link', max_length=100)
