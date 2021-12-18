@@ -36,7 +36,7 @@ def book(request):
     pdf = Pdf.objects.all()
     book = Book.objects.all().order_by('-id')
     context = {
-        'pdf' : pdf
+        'pdf' : pdf,
         'book' : book
     }
     return render(request, 'book.html', context)
