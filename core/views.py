@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from core.models import University, Book, Project, Contact, Meqsed
+from core.models import University, Book, Project, Contact, Meqsed, Pdf
 from core.forms import ContactForm
 from django.contrib import messages
 
@@ -33,8 +33,10 @@ def about(request):
     return render(request, 'about.html', context)
 
 def book(request):
+    pdf = Pdf.objects.all()
     book = Book.objects.all().order_by('-id')
     context = {
+        'pdf' : pdf
         'book' : book
     }
     return render(request, 'book.html', context)

@@ -33,6 +33,16 @@ class Book(models.Model):
         return self.name
 
 
+class Pdf(models.Model):
+    image = models.ImageField(upload_to='media/images')
+    name = models.CharField('Ad', max_length=60)
+    front_description = models.CharField('On melumat', max_length=500)
+    back_description = models.CharField('Arxa melumat', max_length=2000)
+    endirme_linki = models.CharField('Endirme linki', max_length=20)
+
+    def __str__(self):
+        return self.name
+
 
 class Project(models.Model):
     image = models.ImageField(upload_to='media/images')
